@@ -1,0 +1,46 @@
+{
+    "prettier.ignorePath": ".prettierignore",
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnPaste": false,
+    "eslint.alwaysShowStatus": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.tabSize": 2,
+    "[javascript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true
+    },
+    "editor.maxTokenizationLineLength": 2000000000,
+    "editor.wordWrap": "on",
+    "scss.validate": false,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "todo-tree.tree.scanMode": "workspace only",
+    "cSpell.words": [
+      "Clayful",
+      "dicolabs",
+      "helpfuls",
+      "nestjs",
+      "Presave",
+      "Presaved",
+      "ULID"
+    ],
+  }
