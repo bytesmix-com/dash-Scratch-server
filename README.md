@@ -11,7 +11,10 @@ yarn typeorm migration:run
 ```
 
 ## 서버 요구사항
-- nodejs 설치 (v16.10.0), mysql
+- Ubuntu 20.04.3 LTS
+- Mysql 8.0.23
+
+- nodejs 설치 (v16.10.0)
 - npm install -g pm2
 
 ## 환경 변수 관련
