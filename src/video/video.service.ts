@@ -219,7 +219,7 @@ export class VideoService {
           '라이브 스트리밍 영상은 업로드 할 수 없습니다',
         );
       }
-      let durationMatch = /(?:PT)(\d+)M(\d+)S/
+      let durationMatch = /(?:PT)(\d+)M(\d+)?S?/
         .exec(item.contentDetails.duration)
         ?.slice(0);
 
@@ -236,7 +236,8 @@ export class VideoService {
         video_createdAt: new Date(item.snippet.publishedAt),
         video_channelName: item.snippet.channelTitle,
         video_lengthInSeconds:
-          parseInt(durationMatch[1]) * 60 + parseInt(durationMatch[2]),
+          parseInt(durationMatch[1] ?? '0') * 60 +
+          parseInt(durationMatch[2] ?? '0'),
         video_thumbnail: (
           item.snippet.thumbnails.standard ??
           item.snippet.thumbnails.high ??

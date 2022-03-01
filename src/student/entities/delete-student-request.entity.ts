@@ -33,7 +33,7 @@ export class DeleteStudentRequestEntity {
     nullable: true,
     onDelete: 'SET NULL',
   })
-  student: StudentEntity;
+  student?: StudentEntity;
 
   @UpdateDateColumn()
   updatedAt: Date;
