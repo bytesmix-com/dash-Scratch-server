@@ -51,7 +51,7 @@ import { VideoModule } from './video/video.module';
           password: process.env.DATABASE_PASSWORD,
           database: process.env.DATABASE_NAME,
           autoLoadEntities: true,
-          synchronize: process.env.NODE_MODULE !== 'production',
+          synchronize: process.env.NODE_ENV !== 'production',
         };
       },
     }),
