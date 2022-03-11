@@ -26,6 +26,9 @@ import { VideoModule } from './video/video.module';
       context: ({ req, res }) => ({ req, res }),
       cors: {
         origin: [
+          "https://dash.dongseo.ac.kr",
+          "https://one-dash.dongseo.ac.kr",
+          "https://dash.dongseo.ac.kr:82",
           'https://api-local.stg-scratch-tutoring.app:3001',
           'https://stg-scratch-tutoring.app',
           'https://scratch-tutoring.app',
